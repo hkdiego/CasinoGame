@@ -8,10 +8,8 @@
 
 import UIKit
 
-class Coin {
-    var isReshka: Bool
-    init (isReshka: Bool) {
-        self.isReshka = isReshka
-    }
-    
+struct Coin {
+    let imageNames = ["orel","reshka", "spinning"]
+    var isReshka: Bool = false
 }
+

@@ -17,31 +17,24 @@ class MainViewController: UIViewController {
     @IBOutlet weak var betSlider: UISlider!
     @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var coinImageView: UIImageView!
-    
-    
     @IBOutlet weak var betButton: UIButton!
     
     var bankSum = 10
     var betSide = 0
     var coin = Coin(isReshka: false)
-    var popVC = PopUpViewController()
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        assignbackground()
+        createBackground()
         
-        updateBetLabel(currentSliderValue: 0)
-        setupButtons()
+        createButtons()
         
         refresh()
     }
     
-    func assignbackground(){
+    func createBackground(){
         let background = UIImage(named: "background")
         let backgroundImageView = UIImageView(image: background)
-        backgroundImageView.makeBlurImage(targetImageView: backgroundImageView)
         backgroundImageView.frame = self.view.frame
         self.view.insertSubview(backgroundImageView, at: 0)
 
@@ -51,13 +44,13 @@ class MainViewController: UIViewController {
         walletLabel.text = "\(bankSum)"
     }
     
-    func setupBetSlider() {
+    func refreshBetSlider() {
         betSlider.minimumValue = 0
         betSlider.maximumValue = Float(bankSum)
         betSlider.value = 0
     }
     
-    func setupButtons() {
+    func createButtons() {
         betButton.layer.cornerRadius = betButton.frame.height / 2
         segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
         
@@ -78,29 +71,15 @@ class MainViewController: UIViewController {
     
     func refresh() {
         updateWalletLabel()
-        setupBetSlider()
+        refreshBetSlider()
         updateMaxSliderValue()
+        updateCoinView()
         updateBetLabel(currentSliderValue: 0.0)
         maxBetLabel.text = String(bankSum)
         
     }
     
-//    func updateCoinImage(side: String) {
-//        let coinImage = UIImage(named: side)
-//        let selectedImageView = UIImageView(image: coinImage)
-//        self.coinImageView = selectedImageView
-//    }
-    
-    func showAlerts() {
-//        let alert = UIAlertController(title: "Ты кто такой, сука", message: "Чтоб это делать", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "В дипе?", style: .cancel, handler: nil))
-//        alert.addAction(UIAlertAction(title: "ХУИПЕ", style: .destructive, handler: nil))
-//        self.present(alert, animated: true)
-    }
-    
-    
     @IBAction func showAddFundsView(_ sender: UIButton) {
-        showAlerts()
         guard let popUpVc = UIStoryboard(
             name: "Main",
             bundle: nil).instantiateViewController(
@@ -117,26 +96,8 @@ class MainViewController: UIViewController {
         updateBetLabel(currentSliderValue: betSlider.value)
     }
     
-    func spinCoinImage() {
-        self.coinImageView.image = UIImage(named: "spinning")
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10), execute: {
-            for _ in 0...5 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute: {
-                    self.coinImageView.image = UIImage(named: "reshka")
-                })
-                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute: {
-                    self.coinImageView.image = UIImage(named: "orel")
-                })
-                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute: {
-                    self.coinImageView.image = UIImage(named: "spinning")
-                })
-            }
-        })
-    }
-    
     @IBAction func betButtonPressed(_ sender: Any) {
         self.resultLabel.text = "Результат..."
-        spinCoinImage()
         
         self.coinImageView.image = UIImage(named: "spinning")
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
@@ -162,7 +123,6 @@ class MainViewController: UIViewController {
                 }
             }
             self.refresh()
-            self.updateCoinView()
         })
     }
     

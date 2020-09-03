@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		752F5FDB2500B4BB00414D2E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5FDA2500B4BB00414D2E /* Coin.swift */; };
-		752F5FDE2500D16200414D2E /* UIImageView + Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5FDD2500D16200414D2E /* UIImageView + Blur.swift */; };
 		75AB879724ECFEDE00FCFF69 /* MainViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */; };
 		75E0CE9D24EBC21E005A5789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */; };
 		75E0CE9F24EBC21E005A5789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */; };
@@ -21,9 +20,8 @@
 
 /* Begin PBXFileReference section */
 		752F5FDA2500B4BB00414D2E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
-		752F5FDD2500D16200414D2E /* UIImageView + Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Blur.swift"; sourceTree = "<group>"; };
 		75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerDelegate.swift; sourceTree = "<group>"; };
-		75E0CE9924EBC21E005A5789 /* Ебаное Казино.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ебаное Казино.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E0CE9924EBC21E005A5789 /* Ёбаное казино.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ёбаное казино.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		75E0CEA024EBC21E005A5789 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -45,14 +43,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		752F5FDC2500D14A00414D2E /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				752F5FDD2500D16200414D2E /* UIImageView + Blur.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		75E0CE9024EBC21E005A5789 = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +54,7 @@
 		75E0CE9A24EBC21E005A5789 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75E0CE9924EBC21E005A5789 /* Ебаное Казино.app */,
+				75E0CE9924EBC21E005A5789 /* Ёбаное казино.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,7 +62,6 @@
 		75E0CE9B24EBC21E005A5789 /* randomGame */ = {
 			isa = PBXGroup;
 			children = (
-				752F5FDC2500D14A00414D2E /* Extensions */,
 				75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */,
 				752F5FDA2500B4BB00414D2E /* Coin.swift */,
 				75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */,
@@ -104,7 +93,7 @@
 			);
 			name = randomGame;
 			productName = randomGame;
-			productReference = 75E0CE9924EBC21E005A5789 /* Ебаное Казино.app */;
+			productReference = 75E0CE9924EBC21E005A5789 /* Ёбаное казино.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +153,6 @@
 				75E0CE9D24EBC21E005A5789 /* AppDelegate.swift in Sources */,
 				75E0CE9F24EBC21E005A5789 /* SceneDelegate.swift in Sources */,
 				75E0CEB124EBD4F8005A5789 /* PopUpViewController.swift in Sources */,
-				752F5FDE2500D16200414D2E /* UIImageView + Blur.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kurchatov.hkdDev.randomGame;
-				PRODUCT_NAME = "Ебаное Казино";
+				PRODUCT_NAME = "Ёбаное казино";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kurchatov.hkdDev.randomGame;
-				PRODUCT_NAME = "Ебаное Казино";
+				PRODUCT_NAME = "Ёбаное казино";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
