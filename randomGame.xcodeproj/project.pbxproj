@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		752F5FDB2500B4BB00414D2E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5FDA2500B4BB00414D2E /* Coin.swift */; };
+		752F5FDE2500D16200414D2E /* UIImageView + Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5FDD2500D16200414D2E /* UIImageView + Blur.swift */; };
+		75AB879724ECFEDE00FCFF69 /* MainViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */; };
+		75E0CE9D24EBC21E005A5789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */; };
+		75E0CE9F24EBC21E005A5789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */; };
+		75E0CEA124EBC21E005A5789 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CEA024EBC21E005A5789 /* MainViewController.swift */; };
+		75E0CEA424EBC21E005A5789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E0CEA224EBC21E005A5789 /* Main.storyboard */; };
+		75E0CEA624EBC223005A5789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E0CEA524EBC223005A5789 /* Assets.xcassets */; };
+		75E0CEA924EBC223005A5789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75E0CEA724EBC223005A5789 /* LaunchScreen.storyboard */; };
+		75E0CEB124EBD4F8005A5789 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CEB024EBD4F8005A5789 /* PopUpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		752F5FDA2500B4BB00414D2E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		752F5FDD2500D16200414D2E /* UIImageView + Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Blur.swift"; sourceTree = "<group>"; };
+		75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerDelegate.swift; sourceTree = "<group>"; };
+		75E0CE9924EBC21E005A5789 /* Ебаное Казино.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ебаное Казино.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		75E0CEA024EBC21E005A5789 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		75E0CEA324EBC21E005A5789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75E0CEA524EBC223005A5789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75E0CEA824EBC223005A5789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75E0CEAA24EBC223005A5789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E0CEB024EBD4F8005A5789 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75E0CE9624EBC21E005A5789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		752F5FDC2500D14A00414D2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				752F5FDD2500D16200414D2E /* UIImageView + Blur.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75E0CE9024EBC21E005A5789 = {
+			isa = PBXGroup;
+			children = (
+				75E0CE9B24EBC21E005A5789 /* randomGame */,
+				75E0CE9A24EBC21E005A5789 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75E0CE9A24EBC21E005A5789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75E0CE9924EBC21E005A5789 /* Ебаное Казино.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75E0CE9B24EBC21E005A5789 /* randomGame */ = {
+			isa = PBXGroup;
+			children = (
+				752F5FDC2500D14A00414D2E /* Extensions */,
+				75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */,
+				752F5FDA2500B4BB00414D2E /* Coin.swift */,
+				75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */,
+				75E0CEA024EBC21E005A5789 /* MainViewController.swift */,
+				75E0CEA224EBC21E005A5789 /* Main.storyboard */,
+				75E0CEA524EBC223005A5789 /* Assets.xcassets */,
+				75E0CEA724EBC223005A5789 /* LaunchScreen.storyboard */,
+				75E0CEAA24EBC223005A5789 /* Info.plist */,
+				75E0CEB024EBD4F8005A5789 /* PopUpViewController.swift */,
+				75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */,
+			);
+			path = randomGame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75E0CE9824EBC21E005A5789 /* randomGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E0CEAD24EBC223005A5789 /* Build configuration list for PBXNativeTarget "randomGame" */;
+			buildPhases = (
+				75E0CE9524EBC21E005A5789 /* Sources */,
+				75E0CE9624EBC21E005A5789 /* Frameworks */,
+				75E0CE9724EBC21E005A5789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = randomGame;
+			productName = randomGame;
+			productReference = 75E0CE9924EBC21E005A5789 /* Ебаное Казино.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75E0CE9124EBC21E005A5789 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = hkdDev;
+				TargetAttributes = {
+					75E0CE9824EBC21E005A5789 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 75E0CE9424EBC21E005A5789 /* Build configuration list for PBXProject "randomGame" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75E0CE9024EBC21E005A5789;
+			productRefGroup = 75E0CE9A24EBC21E005A5789 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75E0CE9824EBC21E005A5789 /* randomGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75E0CE9724EBC21E005A5789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E0CEA924EBC223005A5789 /* LaunchScreen.storyboard in Resources */,
+				75E0CEA624EBC223005A5789 /* Assets.xcassets in Resources */,
+				75E0CEA424EBC21E005A5789 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75E0CE9524EBC21E005A5789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75AB879724ECFEDE00FCFF69 /* MainViewControllerDelegate.swift in Sources */,
+				752F5FDB2500B4BB00414D2E /* Coin.swift in Sources */,
+				75E0CEA124EBC21E005A5789 /* MainViewController.swift in Sources */,
+				75E0CE9D24EBC21E005A5789 /* AppDelegate.swift in Sources */,
+				75E0CE9F24EBC21E005A5789 /* SceneDelegate.swift in Sources */,
+				75E0CEB124EBD4F8005A5789 /* PopUpViewController.swift in Sources */,
+				752F5FDE2500D16200414D2E /* UIImageView + Blur.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75E0CEA224EBC21E005A5789 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E0CEA324EBC21E005A5789 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75E0CEA724EBC223005A5789 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75E0CEA824EBC223005A5789 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75E0CEAB24EBC223005A5789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75E0CEAC24EBC223005A5789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75E0CEAE24EBC223005A5789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24H6C73CDS;
+				INFOPLIST_FILE = randomGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kurchatov.hkdDev.randomGame;
+				PRODUCT_NAME = "Ебаное Казино";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75E0CEAF24EBC223005A5789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24H6C73CDS;
+				INFOPLIST_FILE = randomGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kurchatov.hkdDev.randomGame;
+				PRODUCT_NAME = "Ебаное Казино";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75E0CE9424EBC21E005A5789 /* Build configuration list for PBXProject "randomGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E0CEAB24EBC223005A5789 /* Debug */,
+				75E0CEAC24EBC223005A5789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E0CEAD24EBC223005A5789 /* Build configuration list for PBXNativeTarget "randomGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E0CEAE24EBC223005A5789 /* Debug */,
+				75E0CEAF24EBC223005A5789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75E0CE9124EBC21E005A5789 /* Project object */;
+}
