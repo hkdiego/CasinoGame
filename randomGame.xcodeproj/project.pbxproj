@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		752F5FDB2500B4BB00414D2E /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752F5FDA2500B4BB00414D2E /* Coin.swift */; };
+		759947EC2506201000A12E36 /* UIView + animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759947EB2506201000A12E36 /* UIView + animate.swift */; };
 		75AB879724ECFEDE00FCFF69 /* MainViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */; };
 		75E0CE9D24EBC21E005A5789 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */; };
 		75E0CE9F24EBC21E005A5789 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		752F5FDA2500B4BB00414D2E /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		759947EB2506201000A12E36 /* UIView + animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + animate.swift"; sourceTree = "<group>"; };
 		75AB879624ECFEDE00FCFF69 /* MainViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerDelegate.swift; sourceTree = "<group>"; };
 		75E0CE9924EBC21E005A5789 /* Ёбаное казино.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ёбаное казино.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		759947EA25061FF700A12E36 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				759947EB2506201000A12E36 /* UIView + animate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		75E0CE9024EBC21E005A5789 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		75E0CE9B24EBC21E005A5789 /* randomGame */ = {
 			isa = PBXGroup;
 			children = (
+				759947EA25061FF700A12E36 /* Extensions */,
 				75E0CE9C24EBC21E005A5789 /* AppDelegate.swift */,
 				752F5FDA2500B4BB00414D2E /* Coin.swift */,
 				75E0CE9E24EBC21E005A5789 /* SceneDelegate.swift */,
@@ -152,6 +163,7 @@
 				75E0CEA124EBC21E005A5789 /* MainViewController.swift in Sources */,
 				75E0CE9D24EBC21E005A5789 /* AppDelegate.swift in Sources */,
 				75E0CE9F24EBC21E005A5789 /* SceneDelegate.swift in Sources */,
+				759947EC2506201000A12E36 /* UIView + animate.swift in Sources */,
 				75E0CEB124EBD4F8005A5789 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

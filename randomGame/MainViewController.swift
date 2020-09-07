@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var betButton: UIButton!
     
     var bankSum = 10
-    var betSide = 0
+    var isBetSideReshka: Bool?
     var coin = Coin(isReshka: false)
     
     override func viewDidLoad() {
@@ -30,6 +30,10 @@ class MainViewController: UIViewController {
         createButtons()
         
         refresh()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
     }
     
     func createBackground(){
@@ -52,8 +56,9 @@ class MainViewController: UIViewController {
     
     func createButtons() {
         betButton.layer.cornerRadius = betButton.frame.height / 2
-        segment.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
-        
+        segment.setTitleTextAttributes(
+            [NSAttributedString.Key.foregroundColor: UIColor.white],
+            for: .normal)
     }
     
     func updateBetLabel(currentSliderValue: Float) {
@@ -76,6 +81,8 @@ class MainViewController: UIViewController {
         updateCoinView()
         updateBetLabel(currentSliderValue: 0.0)
         maxBetLabel.text = String(bankSum)
+        resultLabel.fadeTransition(0.4)
+        resultLabel.text = coin.coinText
         
     }
     
@@ -97,22 +104,13 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func betButtonPressed(_ sender: Any) {
+        self.resultLabel.fadeTransition(0.4)
         self.resultLabel.text = "Результат..."
-        
         self.coinImageView.image = UIImage(named: "spinning")
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
-            let randomResult = Int.random(in: 0...1)
-            switch randomResult {
-            case 0:
-                self.resultLabel.text = "Орёл!"
-                self.coin.isReshka = false
-            case 1:
-                self.resultLabel.text = "Решка!"
-                self.coin.isReshka = true
-            default:
-                 break
-            }
-            if randomResult == self.betSide {
+            self.coin.flip()
+            if self.coin.isReshka == self.isBetSideReshka {
                 //выигрыш
                 self.bankSum = self.bankSum + Int(self.betSlider.value)
             } else {
@@ -130,12 +128,10 @@ class MainViewController: UIViewController {
         switch segment.selectedSegmentIndex {
         case 0:
             // Орел
-            self.betSide = 0
-            self.coin.isReshka = false
+            self.isBetSideReshka = false
         case 1:
             // Решка
-            self.betSide = 1
-            self.coin.isReshka = true
+            self.isBetSideReshka = true
         default:
             break
         }
