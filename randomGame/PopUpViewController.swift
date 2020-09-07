@@ -11,17 +11,19 @@ import UIKit
 class PopUpViewController: UIViewController {
     
     weak var delegate: MainViewControllerDelegate?
-    var addedFunds: Int = 0
     @IBOutlet weak var sumTextField: UITextField!
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var addButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPopView()
-        sumTextField.placeholder = "сумма"
         moveIn()
     }
     func setupPopView() {
+        sumTextField.attributedPlaceholder = NSAttributedString(
+            string: "Введите сумму",
+            attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
+        )
         
         let gestureRecognizer = UITapGestureRecognizer(target: self,action: #selector(moveOut))
         gestureRecognizer.cancelsTouchesInView = false
@@ -33,7 +35,6 @@ class PopUpViewController: UIViewController {
         
         popUpView.layer.cornerRadius = 25
         addButton.layer.cornerRadius = 15
-        sumTextField.attributedPlaceholder = NSAttributedString(string: "Сумма пополнения")
         self.view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         
         

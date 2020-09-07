@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum AlertType: String {
+    case lost, wrongSum
+}
+
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var walletLabel: UILabel!
@@ -84,15 +89,24 @@ class MainViewController: UIViewController {
         resultLabel.text = coin.coinText
         
         if bankSum == 0 {
-            showLostAlert()
+            showAlert(type: .lost)
         }
         
     }
     
-    func showLostAlert() {
-        let alert = UIAlertController(title: "Получается", message: "проиграл", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ёбаный рот", style: .cancel, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+    func showAlert(type: AlertType) {
+        switch type {
+        case .lost:
+            let alert = UIAlertController(title: "Получается", message: "проиграл", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ёбаный рот", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        case .wrongSum:
+            let alert = UIAlertController(title: "Пидор", message: "Баги ищешь?)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Больше не буду", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        
     }
     
     @IBAction func showAddFundsView(_ sender: UIButton) {
@@ -151,10 +165,14 @@ class MainViewController: UIViewController {
 extension MainViewController: MainViewControllerDelegate {
     func updateWallet(_ text: String) {
         guard let addedFunds = Int(text) else { return }
-        self.bankSum += addedFunds
-        let bankString = String(self.bankSum)
-        walletLabel.text = bankString
-        refresh()
+        if addedFunds > 0 {
+            self.bankSum += addedFunds
+            let bankString = String(self.bankSum)
+            walletLabel.text = bankString
+            refresh()
+        } else {
+            showAlert(type: .wrongSum)
+        }
     }
     
     func updateMaxSliderValue() {

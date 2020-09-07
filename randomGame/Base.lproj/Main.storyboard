@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,13 +10,13 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="randomGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Ёбаное_казино" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdZ-5o-jZh">
-                                <rect key="frame" x="295" y="74" width="99" height="26"/>
+                                <rect key="frame" x="905" y="30" width="99" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZdZ-5o-jZh" secondAttribute="height" multiplier="19:5" id="Iwd-Px-I22"/>
                                 </constraints>
@@ -29,38 +29,38 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кошелёк" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="CSy-f7-vej">
-                                <rect key="frame" x="129" y="144" width="156" height="47"/>
+                                <rect key="frame" x="434" y="100" width="156" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <color key="textColor" red="0.87938785549999998" green="0.74560388180000003" blue="0.82039371210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-l1-fie">
-                                <rect key="frame" x="198" y="211" width="18" height="33.5"/>
+                                <rect key="frame" x="503" y="167" width="18" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <color key="textColor" red="0.87938785549999998" green="0.74560388180000003" blue="0.82039371210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="yNH-V0-eo7">
-                                <rect key="frame" x="68" y="304.5" width="278" height="31"/>
+                                <rect key="frame" x="68" y="260.5" width="888" height="31"/>
                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="betSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fIU-3p-TzG"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBY-ye-tBX">
-                                <rect key="frame" x="199" y="354.5" width="16" height="30"/>
+                                <rect key="frame" x="504" y="310.5" width="16" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.87938785549999998" green="0.74560388180000003" blue="0.82039371210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ставка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-W9-EOI">
-                                <rect key="frame" x="174.5" y="394.5" width="65" height="24"/>
+                                <rect key="frame" x="479.5" y="350.5" width="65" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.87938785549999998" green="0.74560388180000003" blue="0.82039371210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tTx-k0-Xgw">
-                                <rect key="frame" x="146.5" y="448.5" width="121" height="32"/>
+                                <rect key="frame" x="451.5" y="404.5" width="121" height="32"/>
                                 <segments>
                                     <segment title="Орёл"/>
                                     <segment title="Решка"/>
@@ -71,7 +71,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbN-pJ-quG">
-                                <rect key="frame" x="137" y="509.5" width="140" height="50"/>
+                                <rect key="frame" x="442" y="465.5" width="140" height="50"/>
                                 <color key="backgroundColor" red="0.340398953" green="0.15957713270000001" blue="0.12609063279999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="Rch-q8-oWE"/>
@@ -85,7 +85,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orel" translatesAutoresizingMaskIntoConstraints="NO" id="2bL-AE-oIe">
-                                <rect key="frame" x="142" y="589.5" width="130" height="130"/>
+                                <rect key="frame" x="447" y="545.5" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="10T-2z-gAM"/>
                                     <constraint firstAttribute="height" constant="130" id="u3H-tP-2Ws"/>
@@ -93,19 +93,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Результат" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="brm-Fo-ozW">
-                                <rect key="frame" x="157.5" y="749.5" width="99.5" height="24"/>
+                                <rect key="frame" x="462.5" y="705.5" width="99.5" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.87938785549999998" green="0.74560388180000003" blue="0.82039371210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOE-ue-fyo">
-                                <rect key="frame" x="354" y="304.5" width="16" height="30"/>
+                                <rect key="frame" x="964" y="260.5" width="16" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSQ-W9-SGl">
-                                <rect key="frame" x="44" y="304.5" width="16" height="30"/>
+                                <rect key="frame" x="44" y="260.5" width="16" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -160,16 +160,16 @@
         <!--Pop Up View Controller-->
         <scene sceneID="h2I-AU-Kv9">
             <objects>
-                <viewController storyboardIdentifier="popUpVCid" id="mDJ-Rg-ax9" customClass="PopUpViewController" customModule="randomGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popUpVCid" id="mDJ-Rg-ax9" customClass="PopUpViewController" customModule="Ёбаное_казино" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9PX-Ue-hYO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IG4-wD-RMu">
-                                <rect key="frame" x="50" y="353" width="314" height="200"/>
+                                <rect key="frame" x="50" y="573" width="924" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdu-xZ-4WS">
-                                        <rect key="frame" x="97" y="125" width="120" height="35"/>
+                                        <rect key="frame" x="402" y="125" width="120" height="35"/>
                                         <color key="backgroundColor" red="0.73913388324873097" green="0.39292462062438105" blue="0.55183045070352443" alpha="0.59431185787671237" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="Rbv-Ar-8C7"/>
@@ -183,7 +183,7 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите сумму" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BVP-gp-GCK">
-                                        <rect key="frame" x="82" y="40" width="150" height="40"/>
+                                        <rect key="frame" x="387" y="40" width="150" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.87842883520000004" blue="0.97410784890000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" red="0.87938785549999998" green="0.74560388180000003" blue="0.82039371210000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
