@@ -28,7 +28,6 @@ class MainViewController: UIViewController {
         createBackground()
         
         createButtons()
-        
         refresh()
     }
     
@@ -84,6 +83,16 @@ class MainViewController: UIViewController {
         resultLabel.fadeTransition(0.4)
         resultLabel.text = coin.coinText
         
+        if bankSum == 0 {
+            showLostAlert()
+        }
+        
+    }
+    
+    func showLostAlert() {
+        let alert = UIAlertController(title: "Получается", message: "проиграл", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ёбаный рот", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func showAddFundsView(_ sender: UIButton) {

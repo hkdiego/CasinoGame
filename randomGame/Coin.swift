@@ -18,10 +18,10 @@ struct Coin {
         switch randomResult {
         case 0:
             self.isReshka = false
-            self.coinText = "Орёл"
+            self.coinText = "Орёл!"
         case 1:
             self.isReshka = true
-            self.coinText = "Решка"
+            self.coinText = "Решка!"
         default:
             break
         }
